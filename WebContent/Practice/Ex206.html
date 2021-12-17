@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Table. rowspan / colspan</title>
+<style>
+	table, td, th {
+		border:1px solid black;
+	}
+	table {
+		border-collapse:collapse;
+	}
+	td,th {
+		padding: 8px;
+	}
+	th {
+		color: #235fa6;
+		font-size: 20px;
+	}
+	td {
+		font-size: 12px;
+		text-align:center;
+	}
+</style>
+</head>
+<body>
+	<h1>남은 과목들과 중요도 정리</h1>
+		<table>
+		<tr>
+			<th>과목</th>
+			<th colspan="2">난이도 및 중요도</th>
+		</tr>
+		<tr>
+			<td>JS(jQuery)</td>
+			<td>중/하</td>
+			<td>중</td>
+		</tr>
+		<tr>
+			<td>Servlet&amp;JSP</td>
+			<td>상</td>
+			<td rowspan = "3">상상</td>
+		</tr>
+		<tr>
+			<td>Spring</td>
+			<td>상상</td>
+		</tr>
+		<tr>
+			<td>Final Project</td>
+			<td>상상</td>
+		</tr>
+	</table>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script src="js/jquery-ui.js"></script>
+<link rel="stylesheet" href="css/jquery-ui.css"/>
+<script>
+	$(function () {
+		$("p").on("click", function() {
+			$("span").css('color',"blue");
+			$("span").css('fontSize','20px');
+		});
+		$("p").mouseenter(function () {
+			$(this).animate({width:'180px',height:'60px'},1000);
+		})
+		$("p").click(function() {
+			$(this).html('<h3>신기하당</h3>');
+			$(this).css('color','blue');
+		})
+	});
+	$(function() {
+		$("#btn").on("click", function() {
+			num = Number($("#input1").val())+1;
+			$("#input1").val(num);
+		})
+	});
+	$(function() {
+		$("#reset").click(function() {
+			$("#input1").val(0);
+		})
+	});
+	
+
+</script>
+</head>
+<body>
+	<div id="query" 제이쿼리 배우기></div>
+	<h3>금요일 신난당</h3>
+	<p>이제부터 <span>제이쿼리</span>를 다 같이 공부해요!<br/>
+	마우스로 클릭 !!</p>
+	
+	<input type="text" id="input1" value="0"/>
+	<button id="btn">클릭</button>
+	<button id="reset">리셋</button>
+	<input type="date" name="bday">
+</body>
+</html>

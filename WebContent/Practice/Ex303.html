@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+	body { font-size:25px; }
+	/*h2.accent { text-decoration:underline; }*/
+	/* 공백문자 = 자손, > =  자식*/
+	ul>li {
+		font-weight:bold;
+		color:green;
+	}
+	#li1 {
+		color:red;
+	}
+	.li2 {
+		color:red;
+	}
+</style>
+</head>
+<body>
+	<h1>정처산기 실습</h1>
+	<h2 class="accent">8주 5일차</h2>
+	
+	<ul>강의장
+		<li class="accent">A강의장</li>
+		<li>(9/3 이후 ~ 외부평가일) ? 강의장</li>
+	</ul>
+	<ul>특이사항
+		<ol>난이도
+			<li>JS(jQuery) : 중</li>
+			<li id="li1">Servlet&amp;JSP : 중</li>
+			<li class="li2">Spring : 상</li>
+		</ol>
+	</ul>
+</body>
+</html>

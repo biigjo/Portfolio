@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+	span {
+		font-size:5px;
+	}
+	#subject {
+		font-size:30px;
+		color:#600000;
+	}
+	.course {
+		font-size:24px;
+	}
+	#div1:hover {
+		background:red;
+	}
+	#div2:hover {
+		background:yellow;
+	}
+	#div3:hover {
+		color:blue;
+	}
+</style>
+</head>
+<body>
+
+	<!-- id는 식별하겠다는 뜻, html 전체에서 딱 하나 있어야됨 id앞에 #-->
+	<!-- class는 분류라는 뜻 (클래스이름앞) course 앞에 .붙임-->
+	<!-- content영역을 감쌀 수 있을정도만 span태그 (필요한 만큼만)-->
+	<!-- 화면의 일부를 차지하는 인라인 -->
+	<h2>인라인레벨(예. span태그)</h2>
+	이제 <span id="subject">남은 과목들</span> 중에 핵심은 
+	<span class="course">Servlet&amp;JSP</span>와
+	<span class="course">Spring입니다.</span>
+	
+	<!-- 화면 전체를 차지하는 블럭 -->
+	<h2>블럭레벨(예. p태그. div태그)</h2>
+	<p>이제 남은 과목들 중에 핵심은</p> <p>Servlet&amp;JSP와</p> <p>Spring입니다.</p>
+
+	<br/>
+	<br/>
+	<br/>
+	
+	<div id="div1">이제 남은 과목들 중에 핵심은</div> 
+	<div id="div2">Servlet&JSP와</div> 
+	<div id="div3">Spring입니다.</div>
+
+</body>
+</html>

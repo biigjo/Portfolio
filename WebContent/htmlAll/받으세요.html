@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+	function replaceAll(str, searchStr, replaceStr) {
+	   return str.split(searchStr).join(replaceStr);
+	}
+
+	function secret() {
+		var ori_char = document.getElementById("ori_char").value;   <!-- abcd -->
+		var code_char = document.getElementById("code_char").value;	<!-- 1234 -->
+		var str_input = document.getElementById("str_input").value;
+
+		//for(______ori_char의 모든 인덱스번호에 대해서 반복______) {
+		// ori_char[i] ----> code_char[i]로 변환
+		for(var i=0; i<=3; i++) {
+			//str_input[i] = code_char[i];
+			//str_input = code_char
+			//str_input = str_input.replace(ori_char.charAt(i), code_char.charAt(i));
+			str_input = replaceAll(str_input, ori_char.charAt(i), code_char.charAt(i));
+		}
+		document.getElementById("str_result").value = str_input;
+		
+		/* for(var i=0; i<=3; i++) {
+			str_input[i] = code_char[i];
+			alert(str_input[i]);
+		}  */
+		// str_input에 대해, 자바스크립트 문자열 replace함수를 이용 !
+		
+
+		// 아이디가 str_result인 태그에 str_input의 내용을 대입.
+	}
+</script>
+</head>
+<body>
+	원래의 문자 : <input type="text" id="ori_char"/><br/>
+	암호화 문자 : <input type="text" id="code_char"/><br/>	
+	문자열 : <input type="text" id="str_input"/><br/>
+	<button id="btn_secret" onclick="secret()">변환</button><br/>
+	암호화 문자열 : <input type="text" id="str_result"/>
+	
+<!-- 		<script>
+		var ori_char = prompt('원래의 문자 : ');
+		var code_char = prompt('암호화 문자 : ');
+		var str_input = prompt('문자열 : ');
+		
+		document.getElementById("ori_char").value = ori_char;
+		document.getElementById("code_char").value = code_char;
+		document.getElementById("str_input").value = str_input;
+		</script>
+ -->
+ </body>
+</html>

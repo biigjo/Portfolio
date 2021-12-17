@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>댕댕포레스트 로그인</title>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Gaegu&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+<style>
+	body {
+		height: 100vh;
+		/*background-image: url('Images/댕댕 배경화면.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;*/
+		background: url('Images/댕댕 메인.jpg') no-repeat center/cover;
+		width:250px;
+		text-align:center;
+		font-family:'sunflower', sans-serif;
+	}
+</style>
+<script>
+	function getQueryString(key) {
+
+		// 전체 Url을 가져온다.
+		var str = location.href;
+
+		// QueryString의 값을 가져오기 위해서, ? 이후 첫번째 index값을 가져온다.
+		var index = str.indexOf("?") + 1;
+
+		// Url에 #이 포함되어 있을 수 있으므로 경우의 수를 나눴다.
+		var lastIndex = str.indexOf("#") > -1 ? str.indexOf("#") + 1
+				: str.length;
+
+		// index 값이 0이라는 것은 QueryString이 없다는 것을 의미하기에 종료
+		if (index == 0) {
+			return "";
+		}
+
+		// str의 값은 a=1&b=first&c=true
+		str = str.substring(index, lastIndex);
+
+		// key/value로 이뤄진 쌍을 배열로 나눠서 넣는다.
+		str = str.split("&");
+
+		// 결과값
+		var rst = "";
+
+		for (var i = 0; i < str.length; i++) {
+
+			// key/value로 나눈다.
+			// arr[0] = key
+			// arr[1] = value
+			var arr = str[i].split("=");
+
+			// arr의 length가 2가 아니면 종료
+			if (arr.length != 2) {
+				break;
+			}
+
+			// 매개변수 key과 일치하면 결과값에 셋팅
+			if (arr[0] == key) {
+				rst = arr[1];
+				break;
+			}
+		}
+		return rst;
+	}
+
+	var str_id = getQueryString("id");
+	var str_pw = getQueryString("pw");
+
+	//alert(str_id);
+	//alert(str_pw);
+
+	if (str_id == "yg" || str_id == "YG" && str_pw == "1234") {
+		alert(str_id + "님 안녕하세요!");
+	} else {
+		alert("잘못 입력하셨습니다.")
+	}
+</script>
+</head>
+<body>
+	<br/><br/>
+	<h1>로그인</h1>
+<form action="Login.html" class="form-horizontal">
+  <div class="form-group">
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="text" name="id" placeholder="아이디">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputPassword3" class="col-sm-2 control-label"></label>
+    <div class="col-sm-10">
+      <input type="password" class="form-control" id="password" name="pw" placeholder="비밀번호">
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <div class="checkbox">
+        <label>
+          <input type="checkbox"> 아이디기억하기
+        </label>
+      </div>
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <button type="submit" class="btn btn-default">로그인</button>
+    </div>
+  </div>
+  <button type="button" class="btn btn-success btn-sm">네이버</button>
+  <button type="button" class="btn btn-warning btn-sm">카카오</button>
+</form>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>댕댕포레스트 댕댕쪽지</title>
+<link href="css/Daeng.css" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Gaegu&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+<script language="javascript">
+function showMessage() {window.open("MsgWrite.html","a","width=500,height=400, left=100, top=50");}
+</script>
+</head>
+<body id="body">
+	<div id="header">
+	<div id="topbtn" >
+		<button type="submit" class="btn btn-defalut btn-sm"><img src="Images/로그인버튼.png" width="60" height="40" onclick="location.href='Login.html'"></button>
+		<button type="submit" class="btn btn-defalut btn-sm"><img src="Images/회원가입버튼.png" width="60" height="40" onclick="location.href='Join.html'"></button>
+		<button type="submit" class="btn btn-defalut" onclick="location.href='Message.html'">댕댕쪽지</button> &nbsp; 
+	</div>
+		<h1 id="logoall">
+			<button type="submit" class="btn btn-defalut btn-sm"><img src="Images/강아지로고2.gif" style="width:400px; height:100px;" onclick="location.href='Home.html'" />
+			</button>
+		</h1>
+	<div id="categorybtn">
+			<div id="btn_query" style="float:left">
+				<button class="btn btn-defalut btn-sm"><img src="Images/홈버튼.png" style="width:130px; height:105px;" onclick="location.href='Home.html'"></button> &nbsp; &nbsp;
+			</div>
+			<div id="btn_query" style="float:left">
+				<button class="btn btn-defalut btn-sm"><img src="Images/댕댕사전버튼.png" style="width:130px; height:105px;" onclick="location.href='Dictionary.html'"></button> &nbsp; &nbsp; 
+			</div>
+			<div id="btn_query" style="float:left">
+				<button class="btn btn-defalut btn-sm"><img src="Images/커뮤니티버튼.png" style="width:130px; height:105px;" onclick="location.href='Community.html'"></button> &nbsp; &nbsp; 
+			</div>
+			<div id="btn_query" style="float:left">
+				<button class="btn btn-defalut btn-sm"><img src="Images/자랑방버튼.png" style="width:130px; height:105px;" onclick="location.href='BoardPic.html'"></button> &nbsp; &nbsp; 
+			</div>
+			<div id="btn_query" style="float:left">
+				<button class="btn btn-defalut btn-sm"><img src="Images/병원버튼.png" style="width:130px; height:105px;" onclick="location.href='Hospital.html'"></button> &nbsp; &nbsp; 
+			</div>
+			<div id="btn_query" style="float:left">
+				<button class="btn btn-defalut btn-sm"><img src="Images/유기견버튼.png" style="width:130px; height:105px;" onclick="location.href='Abandoned.html'"></button>
+			</div>
+		</div>
+	</div>	
+		<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+		<div style="clear:both;"></div>
+		<h1 class="f40_cg">댕댕 쪽지</h1>
+	<div class="msg">
+		<button type="button" class="btn btn-default" style="font-size: 20px">받은쪽지함</button>
+		<button type="button" class="btn btn-default" style="font-size: 20px">보낸쪽지함</button>
+		<input type="button" class="btn btn-default"  style="font-size: 20px" value="쪽지보내기" onclick="showMessage();"/>
+	
+		<table class="table-condensed">
+			<thead>
+				<tr >
+					<th>전체&nbsp;<input type="checkbox"></th>
+					<th>보낸사람</th>
+					<th>내용</th>
+					<th>시간</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td><input type="checkbox"></td>
+					<td>댕댕2</td>
+					<td>안녕하세요~메세지를 보내봅니다</td>
+					<td>2021.06.08</td>
+				</tr>
+				<tr>
+					<td><input type="checkbox"></td>
+					<td>.</td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><input type="checkbox"></td>
+					<td>.</td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><input type="checkbox"></td>
+					<td>.</td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><input type="checkbox"></td>
+					<td>.</td>
+					<td></td>
+					<td></td>
+				</tr>
+			</tbody>
+		</table>
+		</div>
+	<div class="delete">
+		<button type="button" class="btn btn-default" style="font-size: 25px">삭제하기</button>
+	</div>
+	<div class="list">
+		<button type="button" class="btn btn-link">1</button>
+	</div>
+</body>
+</html>

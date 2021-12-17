@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>댕댕포레스트 메인홈페이지</title>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Gaegu&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+<style>
+	body {
+		height: 100vh;
+		/*background-image: url('Images/댕댕 배경화면.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;*/
+		background: url('Images/댕댕 메인.jpg') no-repeat center/cover;
+		background-attachment: fixed;
+		font-family:'Gaegu', cursive;
+	}
+
+	#logo {
+		text-align:center;
+	}
+	.login {
+		text-align:right;
+	}
+	.dog {
+		text-align:center;
+	}
+	input:focus{
+	outline:none;
+	}
+</style>
+</head>
+<body>
+	<br/>
+	<div class="login">
+		<button type="submit" class="btn btn-defalut" onclick="location.href='Chat.html'">내정보</button> &nbsp; 
+		<button type="submit" class="btn btn-defalut" onclick="location.href='Chat.html'">댕댕채팅</button> &nbsp; 
+		<button type="submit" class="btn btn-defalut" onclick="location.href='Message.html'">댕댕쪽지</button> &nbsp; 
+	</div>
+	<div id="logo">
+	<h1 style="font-size:80px; color:#73d28c">댕댕 포레스트
+	<button type="submit" class="btn btn-defalut btn-sm"><img src="Images/메인포메.png" width="150" height="130" onclick="location.href='Home.html'"/></button></h1>
+		<button type="submit" class="btn btn-defalut btn-sm"><img src="Images/홈버튼.png" width="150" height="120" onclick="location.href='Home.html'"></button> &nbsp; &nbsp; 
+		<button type="submit" class="btn btn-defalut btn-sm"><img src="Images/댕댕사전버튼.png" width="150" height="120" onclick="location.href='Dictionary.html'"></button> &nbsp; &nbsp; 
+		<button type="submit" class="btn btn-defalut btn-sm"><img src="Images/커뮤니티버튼.png" width="150" height="120" onclick="location.href='Community.html'"></button> &nbsp; &nbsp; 
+		<button type="submit" class="btn btn-defalut btn-sm"><img src="Images/자랑방버튼.png" width="150" height="120" onclick="location.href='BoardPic.html'"></button> &nbsp; &nbsp; 
+		<button type="submit" class="btn btn-defalut btn-sm"><img src="Images/병원버튼.png" width="150" height="120" onclick="location.href='Hospital.html'"></button> &nbsp; &nbsp; 
+		<button type="submit" class="btn btn-defalut btn-sm"><img src="Images/유기견버튼.png" width="150" height="120" onclick="location.href='Abandoned.html'"></button>
+		<h1 style="font-size:40px; color:#ffcd4a">댕댕 베스트 사진<img src="Images/반짝1.gif" width="100" height="60"/></h1>
+	</div>
+		<br/>
+		<div class="dog">
+		<img src="Images/택배견 경태.PNG" width="700" height="300">
+	</div>
+</body>
+</html>
